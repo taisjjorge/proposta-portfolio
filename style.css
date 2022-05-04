@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Joti+One&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Joti One', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    height: 100vh;
+}
+
+header {
+    background-color: #7BE26E;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 2.5px solid #e1f724; */
+    box-shadow: 1px 1px 5px 1px #7d38db;
+    /* border-bottom: 5px ridge #e1f724; */
+
+}
+
+header div {
+    display: flex;
+}
+
+header div img {
+    width: 55px;
+    margin: 0 0.3em;
+    cursor: pointer;
+}
+
+header div h4 {
+    font-size: 1.4em;
+    color: #fff;
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+    /* border-bottom: 1.5px dashed #fff; */
+    border-right: 2px double #7d38db;
+}
+
+header ul li:first-child {
+    border-left: 2px double #7d38db;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #FFF;
+}
+
+
+ul {
+    list-style: none;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #7d38db;
+    font-weight: 600;
+}
+
+.container {
+    margin-top: 1.2%;
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 2.5em;
+    color: #252525;
+}
+
+.container .name h5 {
+    font-size: 1.25em;
+    color: #252525;
+}
+
+/* #arrow {
+    
+    
+} */
+#arrow svg {
+    animation: blink 1.8s steps(5, start) infinite;
+    color: #ffbc11;
+    margin: 15px;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+
+}
+
+#about div {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #252525;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.projects img {
+    max-width: 300px;
+    display: flex;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    border: thick double #7BE26E;
+    box-shadow: 0px 0px 5px 1.5px #7BE26E;
+    border-radius: 5px;
+}
+
+
+.form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+    color: #252525;
+}
+
+.form input { 
+    width: 50%;
+    margin: 1em auto;
+    border: thick double #ffbc11;
+    border-radius: 5px 0px 0px 5px;
+    padding: 8px;
+}
+
+.form input:focus{
+    border: thick double #ffbc11;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 0px 5px 0.2px #ffbc11;
+    outline: 0;
+}
+
+.form button {
+    padding: 12px 10px;
+    margin-left: -5px;
+    /* background-color: #358EB3; */
+    background: linear-gradient(to right, #7BE26E 50%, #7d38db 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: all ease-out 500ms;
+}
+
+
+
+.form button:hover {
+    box-shadow: 0px 0px 5px 0.2px #ffbc11;
+    background-position: left bottom;
+    color: #252525;
+    
+}
+
+#footer-container {
+    color: #fff;
+    background-color: #7d38db;
+    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    height: 7.05em;
+    box-shadow: 1px 1px 5px 4px #7BE26E;
+    /* border: 1px solid red; */
+}
+
+.footer-none {
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+    .projects {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .container .name h1 {
+        font-size: 1.5em;
+    }
+    .container .name h5 {
+        font-size: 1em;
+    }
+    header div h4 {
+        font-size: .9em;
+    }
+    header div img {
+        width: 35px;
+    }
+    ul {
+        font-size: 0.6em;
+    }
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    /* #footer-container{
+        height: 100vh;
+    } */
+
+}
