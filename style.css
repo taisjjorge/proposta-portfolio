@@ -245,8 +245,9 @@ a {
         text-align: justify;
     }
 
-    /* #footer-container{
-        height: 100vh;
-    } */
+    #footer-container{
+        margin-top: 72%;
+        height: 100%;
+    }
 
 }
