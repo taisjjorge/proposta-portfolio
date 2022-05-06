@@ -129,7 +129,7 @@ a {
 }
 
 #about div {
-    max-width: 600px;
+    max-width: 90%;
     margin: 0 auto;
     color: #252525;
 }
@@ -137,7 +137,8 @@ a {
 .projects {
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
+    padding: 1.5em;
 }
 
 .projects img {
@@ -248,6 +249,7 @@ a {
     #footer-container{
         max-height: 250px;
         height: 100vh;
+        overflow: hidden;
     }
 
 }
